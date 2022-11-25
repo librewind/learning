@@ -2,26 +2,33 @@
 
 ## MySQL (Percona)
 
-### Read uncommitted
-
-| Transaction 1 | Transaction 2 |
-| ----------- | ----------- |
-| START TRANSACTION; | START TRANSACTION; |
-| COMMIT; | COMMIT; |
-
-### Read committed
-
-### Repeatable reads
-
-### Serializable
+|                  | Dirty reads | Non-repeatable reads | Phantom reads | Lost updates |
+| :--------------- | :---------: | :------------------: | :-----------: | :----------: |
+| Repeatable reads | ?           | ?                    | ?             | ?            |
+| Read committed   | ?           | ?                    | ?             | ?            |
+| Read uncommitted | ?           | ?                    | ?             | ?            |
 
 ## PostgreSQL
 
-### Read uncommitted
- 
-### Read committed
+|                  | Dirty reads | Non-repeatable reads | Phantom reads | Lost updates | 
+| :--------------- | :---------: | :------------------: | :-----------: | :----------: |                                                                                                                
+| Serializable     | ?           | ?                    | ?             | ?            | 
+| Repeatable reads | ?           | ?                    | ?             | ?            | 
+| Read committed   | ?           | ?                    | ?             | ?            | 
+| Read uncommitted | ?           | ?                    | ?             | ?            |
 
-### Repeatable reads
+## Problem examples
 
-### Serializable
+### Dirty reads
+
+| Transaction 1      | Transaction 2      |
+| ------------------ | ------------------ |
+| START TRANSACTION; | START TRANSACTION; |
+| COMMIT;            | COMMIT;            |
+
+### Non-repeatable reads
+
+### Phantom reads
+
+### Lost updates
 
