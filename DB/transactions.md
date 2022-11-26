@@ -1,6 +1,6 @@
 # Transaction Isolation Levels
 
-## MySQL (Percona)
+## MySQL (Percona 8.0.29-21)
 
 |                  | Dirty reads | Non-repeatable reads | Phantom reads | Lost updates |
 | :--------------- | :---------: | :------------------: | :-----------: | :----------: |
@@ -8,7 +8,7 @@
 | Read committed   | ?           | ?                    | ?             | ?            |
 | Read uncommitted | ?           | ?                    | ?             | ?            |
 
-## PostgreSQL
+## PostgreSQL 14.6-1.pgdg110+1
 
 |                  | Dirty reads | Non-repeatable reads | Phantom reads | Lost updates | 
 | :--------------- | :---------: | :------------------: | :-----------: | :----------: |                                                                                                                
