@@ -32,3 +32,23 @@
 
 ### Lost updates
 
+## Database schema
+
+### MySQL
+
+``` sql
+CREATE TABLE `balances` (
+    `id` INT(11) NOT NULL AUTO_INCREMENT,
+    `balance` INT(11) NOT NULL,
+    PRIMARY KEY (`id`)
+);
+```
+
+### PostgreSQL
+
+```sql
+CREATE TABLE balances (
+    id SERIAL PRIMARY KEY,
+    balance INTEGER NOT NULL
+);
+```
