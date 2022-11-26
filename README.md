@@ -1,8 +1,8 @@
 # Learning
 
-[Transaction Isolation Levels](DB/transactions.md)
-[Locks](DB/locks.md)
-[EXPLAIN](DB/explain.md)
+* [Transaction Isolation Levels](DB/transactions.md)
+* [Locks](DB/locks.md)
+* [EXPLAIN](DB/explain.md)
 
 ## Useful commands
 
