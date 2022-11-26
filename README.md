@@ -1,8 +1,16 @@
 # Learning
 
+## Table of Contents
+
+### DB
+
 * [Transaction Isolation Levels](DB/transactions.md)
 * [Locks](DB/locks.md)
 * [EXPLAIN](DB/explain.md)
+
+### GoF
+
+* [Singleton](GoF/singleton.md)
 
 ## Useful commands
 
