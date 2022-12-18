@@ -14,6 +14,14 @@
 
 ## Useful commands
 
+For M1 chip need create docker-compose.override.yml file with content:
+```
+services
+
+    mysql:
+        platform: linux/amd64
+```
+
 Start services:
 ```console 
 foo@bar:~$ docker-compose up -d
